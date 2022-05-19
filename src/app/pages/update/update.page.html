@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>update</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="updateSongForm" (submit)="updateSong()">
+    <ion-item>
+      <ion-label stacked> Nombre de la canción </ion-label>
+      <ion-input formControlName="songName" type="text" placeholder="Como se llama la canción?"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Nombre del Artista </ion-label>
+      <ion-input formControlName="artistName" type="text" placeholder="Quien es el interprete? "> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Album</ion-label>
+      <ion-input formControlName="albumName" type="text" placeholder="Cual es el nombre del album? "> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Descripción</ion-label>
+      <ion-input formControlName="songDescription" type="text" placeholder=" De que se trata la canción? "> </ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Actualizar canción </ion-button>
+  </form>
+</ion-content>

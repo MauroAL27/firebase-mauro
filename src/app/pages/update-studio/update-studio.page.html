@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>update-studio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="updateStudioForm" (submit)="updateStudio()">
+    <ion-item>
+      <ion-label stacked> Nombre del estudio </ion-label>
+      <ion-input formControlName="nameRecording" type="text" placeholder="Nombre del estudio"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Tipo de melodía </ion-label>
+      <ion-input formControlName="type_of_melody" type="text" placeholder="Tipo de melodía"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Número de cabinas</ion-label>
+      <ion-input formControlName="number_of_cabins" type="text" placeholder="Número de cabinas"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Dueño</ion-label>
+      <ion-input formControlName="owner" type="text" placeholder="Dueño del estudio?"> </ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Actualizar estudio </ion-button>
+  </form>
+</ion-content>

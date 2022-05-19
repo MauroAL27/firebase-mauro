@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>detail-studio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Estudio</h3>
+  <p> El estudio {{ studio.nameRecording }} es del {{studio.owner}}</p>
+
+  <h3>Melodía</h3>
+  <p>Este estudio es de la melodía {{studio.type_of_melody }} </p>
+
+
+  <ion-button expand="block" (click)="deleteStudio()"> Eliminar estudio </ion-button>
+  <ion-button expand="block" routerLink="/update-studio/{{studio.id}}"> Actualizar estudio </ion-button>
+
+</ion-content>

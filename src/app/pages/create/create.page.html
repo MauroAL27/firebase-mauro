@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>create</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="createSongForm" (submit)="createSong()">
+    <ion-item>
+      <ion-label stacked> Nombre de la canción </ion-label>
+      <ion-input formControlName="songName" type="text" placeholder="Como se llama la canción?"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Nombre del Artista </ion-label>
+      <ion-input formControlName="artistName" type="text" placeholder="Quien es el interprete?"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Album</ion-label>
+      <ion-input formControlName="albumName" type="text" placeholder="Cual es el nombre del album?"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Descripción</ion-label>
+      <ion-input formControlName="songDescription" type="text" placeholder=" De que se trata la canción?"> </ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Agregar canción </ion-button>
+  </form>
+
+  <br> <br>
+
+  <form [formGroup]="createStudioForm" (submit)="createStudio()">
+    <ion-item>
+      <ion-label stacked> Nombre del estudio</ion-label>
+      <ion-input formControlName="nameRecording" type="text" placeholder="Nombre del estudio"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Tipo melodía </ion-label>
+      <ion-input formControlName="type_of_melody" type="text" placeholder="Tipo de melodía"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Número de cabinas</ion-label>
+      <ion-input formControlName="number_of_cabins" type="text" placeholder="Número de cabinas"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Dueño</ion-label>
+      <ion-input formControlName="owner" type="text" placeholder="Dueño del estudio?"> </ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Agregar Estudio </ion-button>
+  </form>
+
+</ion-content>
